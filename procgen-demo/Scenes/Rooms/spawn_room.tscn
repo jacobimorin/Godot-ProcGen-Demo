@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=4 uid="uid://1tjbxof5kvyh"]
+
+[ext_resource type="PackedScene" uid="uid://dcnes7yfhi06b" path="res://Scenes/Rooms/room_template.tscn" id="1_jc1yg"]
+[ext_resource type="PackedScene" uid="uid://byx510xkru3u1" path="res://Scenes/player.tscn" id="2_upfck"]
+
+[node name="SpawnRoom" instance=ExtResource("1_jc1yg")]
+
+[node name="TileMapLayer" parent="." index="0"]
+tile_map_data = PackedByteArray("AAD/////AAAFAAQAAAAAAP//AAAGAAQAAAAAAAAAAAAGAAUAAAD//wAAAAAFAAUAAAD+//7/AAACAAMAAAD+////AAACAAMAAAD+/wAAAAACAAMAAAD+/wEAAAACAAMAAAD//wEAAAACAAMAAAAAAAEAAAACAAMAAAABAAEAAAACAAMAAAD///7/AAACAAMAAAAAAP7/AAACAAMAAAABAP7/AAACAAMAAAABAP//AAACAAMAAAABAAAAAAACAAMAAAD+//3/AAACAAIAAAABAP3/AAACAAIAAAACAP3/AAAEAAIAAAD9//3/AAABAAIAAAD9//7/AAABAAMAAAD9/wAAAAABAAQAAAD9/wEAAAABAAMAAAACAAEAAAAEAAMAAAACAP7/AAAEAAMAAAACAP//AAAEAAQAAAACAAAAAAAEAAQAAAD9////AAABAAQAAAD///3/AAADAAIAAAAAAP3/AAADAAIAAAD9/wIAAAABAAUAAAACAAIAAAAEAAUAAAD+/wIAAAACAAUAAAABAAIAAAACAAUAAAD//wIAAAADAAUAAAAAAAIAAAADAAUAAAA=")
+
+[node name="Player" parent="." index="1" instance=ExtResource("2_upfck")]
+position = Vector2(0, 7)
+
+[node name="Camera2D" type="Camera2D" parent="Player" index="2"]
+position = Vector2(0, -6)
+position_smoothing_enabled = true
+
+[node name="DoorNorth" type="Marker2D" parent="." index="2"]
+position = Vector2(0, -48)
+
+[node name="DoorEast" type="Marker2D" parent="." index="3"]
+position = Vector2(48, 0)
+
+[node name="DoorSouth" type="Marker2D" parent="." index="4"]
+position = Vector2(0, 48)
+
+[node name="DoorWest" type="Marker2D" parent="." index="5"]
+position = Vector2(-48, 0)

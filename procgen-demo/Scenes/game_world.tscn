@@ -1,0 +1,28 @@
+[gd_scene load_steps=19 format=3 uid="uid://bliwjp4t8i4mx"]
+
+[ext_resource type="Script" path="res://Scripts/level_generator.gd" id="1_nvtbs"]
+[ext_resource type="PackedScene" uid="uid://1tjbxof5kvyh" path="res://Scenes/Rooms/spawn_room.tscn" id="2_811ao"]
+[ext_resource type="PackedScene" uid="uid://cglyqvic2a32e" path="res://Scenes/Rooms/end_room.tscn" id="3_21klr"]
+[ext_resource type="PackedScene" uid="uid://bn47iw6p1t603" path="res://Scenes/Rooms/room_0.tscn" id="4_ri0fn"]
+[ext_resource type="PackedScene" uid="uid://crwb6jpoub2bs" path="res://Scenes/Rooms/room_1.tscn" id="5_hirmk"]
+[ext_resource type="PackedScene" uid="uid://chmi2jniam8s7" path="res://Scenes/Rooms/room_2.tscn" id="6_u1jjo"]
+[ext_resource type="PackedScene" uid="uid://bqdo4x42dj6di" path="res://Scenes/Rooms/room_3.tscn" id="7_i82dq"]
+[ext_resource type="PackedScene" uid="uid://bcgsmjq6vdw1v" path="res://Scenes/Rooms/room_4.tscn" id="8_htlb5"]
+[ext_resource type="PackedScene" uid="uid://cn4pouc08oekf" path="res://Scenes/Rooms/room_5.tscn" id="9_wqwrr"]
+[ext_resource type="PackedScene" uid="uid://blwa3dmxbaamr" path="res://Scenes/Rooms/room_6.tscn" id="10_q6qbr"]
+[ext_resource type="PackedScene" uid="uid://ccu414tnyf7oi" path="res://Scenes/Rooms/room_7.tscn" id="11_vwb1a"]
+[ext_resource type="PackedScene" uid="uid://ca0f6pca8jd8p" path="res://Scenes/Rooms/room_8.tscn" id="12_6mv3s"]
+[ext_resource type="PackedScene" uid="uid://fqiuy8htss3i" path="res://Scenes/Rooms/room_9.tscn" id="13_5c2x4"]
+[ext_resource type="PackedScene" uid="uid://b0ey0d0ytnew7" path="res://Scenes/Rooms/room_10.tscn" id="14_3umjo"]
+[ext_resource type="PackedScene" uid="uid://yekj7jplfx7h" path="res://Scenes/Rooms/room_11.tscn" id="15_kmma5"]
+[ext_resource type="PackedScene" uid="uid://c56t6mft1ugwj" path="res://Scenes/Rooms/room_12.tscn" id="16_3r20d"]
+[ext_resource type="PackedScene" uid="uid://bb85s6lo56rp0" path="res://Scenes/Rooms/room_13.tscn" id="17_knnvr"]
+[ext_resource type="PackedScene" uid="uid://cd8bq3mlrgdjn" path="res://Scenes/Rooms/room_14.tscn" id="18_fhq5r"]
+
+[node name="GameWorld" type="Node2D"]
+
+[node name="LevelGenerator" type="Node2D" parent="."]
+script = ExtResource("1_nvtbs")
+spawn_room_scene = ExtResource("2_811ao")
+end_room_scene = ExtResource("3_21klr")
+room_variants = Array[PackedScene]([ExtResource("4_ri0fn"), ExtResource("5_hirmk"), ExtResource("6_u1jjo"), ExtResource("7_i82dq"), ExtResource("8_htlb5"), ExtResource("9_wqwrr"), ExtResource("10_q6qbr"), ExtResource("11_vwb1a"), ExtResource("12_6mv3s"), ExtResource("13_5c2x4"), ExtResource("14_3umjo"), ExtResource("15_kmma5"), ExtResource("16_3r20d"), ExtResource("17_knnvr"), ExtResource("18_fhq5r")])

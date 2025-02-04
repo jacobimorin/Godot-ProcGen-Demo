@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=4 uid="uid://cglyqvic2a32e"]
+
+[ext_resource type="PackedScene" uid="uid://dcnes7yfhi06b" path="res://Scenes/Rooms/room_template.tscn" id="1_e7dht"]
+
+[node name="EndRoom" instance=ExtResource("1_e7dht")]
+
+[node name="TileMapLayer" parent="." index="0"]
+tile_map_data = PackedByteArray("AAD+//7/AAACAAMAAAD+////AAACAAMAAAD+/wAAAAACAAMAAAD+/wEAAAACAAMAAAD///7/AAACAAMAAAD/////AAAFAAIAAAD//wAAAAAFAAMAAAD//wEAAAACAAMAAAAAAP7/AAACAAMAAAAAAP//AAAGAAIAAAAAAAAAAAAGAAMAAAAAAAEAAAACAAMAAAABAP7/AAACAAMAAAABAP//AAACAAMAAAABAAAAAAACAAMAAAABAAEAAAACAAMAAAD+//3/AAACAAIAAAABAP3/AAACAAIAAAD9//7/AAABAAMAAAD9/wEAAAABAAMAAAD+/wIAAAACAAUAAAABAAIAAAACAAUAAAACAAEAAAAEAAMAAAACAP7/AAAEAAMAAAACAP//AAAEAAQAAAACAAAAAAAEAAQAAAD///3/AAADAAIAAAAAAP3/AAADAAIAAAD9////AAABAAQAAAD9/wAAAAABAAQAAAD//wIAAAADAAUAAAAAAAIAAAADAAUAAAD9/wIAAAABAAUAAAACAAIAAAAEAAUAAAACAP3/AAAEAAIAAAD9//3/AAABAAIAAAA=")
+
+[node name="DoorNorth" type="Marker2D" parent="." index="1"]
+position = Vector2(0, -48)
+
+[node name="DoorEast" type="Marker2D" parent="." index="2"]
+position = Vector2(48, 0)
+
+[node name="DoorSouth" type="Marker2D" parent="." index="3"]
+position = Vector2(0, 48)
+
+[node name="DoorWest" type="Marker2D" parent="." index="4"]
+position = Vector2(-48, 0)
